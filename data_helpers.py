@@ -83,8 +83,8 @@ def load_data_and_labels_multiclass(sql, stops_words):
     Loads data from files, splits the data into words and generates labels.
     Returns split sentences and labels.
     """
-#    engine = create_engine("mysql+pymysql://root:Cncert@603@10.2.16.31:3306/funds_info_bd_stat_mongo?charset=utf8",encoding = 'utf-8')
-    engine = create_engine("mysql+pymysql://root:Nathan715@127.0.0.1:3306/FlatWhite?charset=utf8",encoding = 'utf-8')
+    
+    engine = create_engine("mysql+pymysql://***:***@***.*.*.*:3306/FlatWhite?charset=utf8",encoding = 'utf-8')
     
     # Load stop words
     with codecs.open(stops_words, "r", "utf-8") as file:
@@ -173,10 +173,10 @@ def fetch_data_db(sql):
 
     '''
 
-    connection = pymysql.connect(host='127.0.0.1',
+    connection = pymysql.connect(host='****',
                                  user='root',
-                                 password='Nathan715',
-                                 db='FlatWhite',
+                                 password=****',
+                                 db='****',
                                  charset='utf8mb4',
                                  port=3306,
                                  cursorclass=pymysql.cursors.DictCursor,
